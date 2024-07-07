@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-secundario: #22D4FD;
+    --color-terciario: #F6F6F6;
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 10%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--fuente-monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.titulo-destacado{
+    color: var(--color-secundario);
+    ;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 2% 10%;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido__texto{
+    font-size: 24px;
+    font-family: var(--fuente-monserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link{
+    width: 378px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-terciario);
+    border: 2px solid var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-primario);
+}
+
+.footer{
+    background-color: var(--color-secundario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center ;
+    font-family: var(--fuente-monserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
